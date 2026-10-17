@@ -199,9 +199,9 @@
 
 ### 4.4. Історія комітів та Pull Request
 
-**Посилання на історію комітів:** https://github.com/USERNAME/coursehub/commits/lab01/
+**Посилання на історію комітів:** https://github.com/lebedeveugene/coursehub/commits/lab01/
 
-**Посилання на Pull Request:** ДОДАТИ ПІСЛЯ СТВОРЕННЯ
+**Посилання на Pull Request:** https://github.com/ТВІЙ-ЛОГІН/coursehub/pull/1
 
 **Рисунок 7 — Історія комітів Git**
 
