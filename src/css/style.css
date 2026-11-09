@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ---------- 1. Змінні та скидання ---------- */
+
+:root {
+    --color-primary: #2563EB;
+    --color-text: #1F2937;
+    --color-muted: #6B7280;
+    --color-bg: #FFFFFF;
+    --color-surface: #EFF6FF;
+    --color-image: #E8F0FB;
+    --color-border: #DCE3EC;
+    --radius: 10px;
+    --gap: clamp(16px, 2vw, 28px);
+    --container: 1200px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- 2. Типографіка ---------- */
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+h1 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+}
+
+
+/* ---------- 3. Макет ---------- */
+
+.container {
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--gap);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 64px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    padding: 8px 4px;
+    color: var(--color-muted);
+    border-bottom: 2px solid transparent;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+    color: var(--color-primary);
+}
+
+.nav__link--active {
+    color: var(--color-text);
+    border-bottom-color: var(--color-primary);
+}
+
+
+/* ---------- 4. Компоненти ---------- */
+
+/* ---------- Макет каталогу курсів ---------- */
+
+.catalog {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-areas: "filter items";
+    gap: var(--gap);
+    padding-block: 32px;
+}
+
+.catalog__filter {
+    grid-area: filter;
+    align-self: start;
+    position: sticky;
+    top: 80px;
+    padding: 16px;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+}
+
+.catalog__items {
+    grid-area: items;
+    min-width: 0;
+}
+
+/* Форма фільтрації */
+
+.catalog__filter form {
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.catalog__filter label {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.catalog__filter input,
+.catalog__filter select {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font: inherit;
+}
+
+.catalog__filter .btn {
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    background: var(--color-surface);
+    padding-block: 64px;
+    text-align: center;
+}
+
+.hero__text {
+    color: var(--color-muted);
+    margin-block: 12px 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
+.btn--sm {
+    padding: 8px 16px;
+    font-size: .9rem;
+}
+
+.section {
+    padding-block: 48px;
+}
+
+.section__title {
+    margin-bottom: 24px;
+}
+
+.cards {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: #fff;
+}
+
+.card__title {
+    font-size: 1.1rem;
+}
+
+.card .btn {
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer {
+    background: var(--color-surface);
+    padding-block: 32px;
+    margin-top: 48px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer__list {
+    display: flex;
+    gap: 16px;
+    color: var(--color-muted);
+}
+
+
+/* ---------- 5. Медіазапити ---------- */
+
+@media (max-width: 768px) {
+    .header__inner {
+        min-height: 56px;
+        flex-wrap: wrap;
+        padding-block: 8px;
+    }
+
+    .nav__list {
+        gap: 12px;
+        font-size: .9rem;
+    }
+
+    .hero {
+        padding-block: 40px;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "filter"
+            "items";
+    }
+
+    .catalog__filter {
+        position: static;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

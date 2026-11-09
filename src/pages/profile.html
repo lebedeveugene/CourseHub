@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мій кабінет - CourseHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="courses.html">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="enroll.html">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="profile.html" aria-current="page">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" aria-labelledby="profile-title">
+            <h1 id="profile-title">Особистий кабінет студента</h1>
+            <p>
+                Керуйте своїми навчальними курсами
+                та відстежуйте прогрес навчання.
+            </p>
+        </section>
+
+        <section class="section" aria-labelledby="my-courses-title">
+            <h2 id="my-courses-title">Мої курси</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3 class="card__title">Навчальні курси</h3>
+                    <p>
+                        Тут відображатиметься перелік курсів,
+                        на які записаний студент.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Навчальний прогрес</h3>
+                    <p>
+                        Тут відображатиметься інформація
+                        про проходження уроків і виконання завдань.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="section" aria-labelledby="learning-title">
+            <h2 id="learning-title">Продовжуйте навчання</h2>
+            <p>
+                Перегляньте каталог CourseHub, щоб знайти
+                нові навчальні курси.
+            </p>
+
+            <a class="btn" href="courses.html">Переглянути каталог</a>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
