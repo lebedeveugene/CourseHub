@@ -2,23 +2,98 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>CourseHub — платформа онлайн-курсів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CourseHub - платформа онлайн-курсів</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>CourseHub</h1>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="index.html" aria-current="page">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link"
+                           href="pages/courses.html">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link"
+                           href="pages/enroll.html">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link"
+                           href="pages/profile.html">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Навчайтеся онлайн разом із CourseHub</h2>
-        <p>Обирайте курси та розвивайте свої навички.</p>
-        <p>Вебзастосунок перебуває на етапі проєктування.</p>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Навчайтеся онлайн разом із CourseHub</h1>
+                <p class="hero__text">
+                    Обирайте навчальні курси, опановуйте нові навички
+                    та розвивайтеся у власному темпі.
+                </p>
+                <a class="btn" href="pages/courses.html">Переглянути курси</a>
+            </div>
+        </section>
+
+        <section class="section container" aria-labelledby="popular-title">
+            <h2 class="section__title" id="popular-title">Популярні курси</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3 class="card__title">Основи HTML та CSS</h3>
+                    <p>Вивчення основ створення та оформлення вебсторінок.</p>
+                    <a class="btn btn--sm" href="pages/courses.html">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Основи JavaScript</h3>
+                    <p>Знайомство з програмуванням інтерактивних вебсторінок.</p>
+                    <a class="btn btn--sm" href="pages/courses.html">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Основи Python</h3>
+                    <p>Вивчення базових конструкцій мови програмування Python.</p>
+                    <a class="btn btn--sm" href="pages/courses.html">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Бази даних MySQL</h3>
+                    <p>Основи проєктування баз даних і роботи із SQL-запитами.</p>
+                    <a class="btn btn--sm" href="pages/courses.html">Детальніше</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="section container">
+            <h2>Про платформу</h2>
+            <p>
+                CourseHub - платформа для онлайн-навчання, яка дозволяє
+                студентам переглядати курси, ознайомлюватися з уроками
+                та записуватися на навчання.
+            </p>
+        </aside>
     </main>
 
-    <footer>
-        <p>© 2026 CourseHub</p>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="pages/courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

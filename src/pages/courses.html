@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог курсів - CourseHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="courses.html" aria-current="page">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="enroll.html">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="profile.html">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" aria-labelledby="catalog-title">
+            <h1 id="catalog-title">Каталог онлайн-курсів</h1>
+            <p>Оберіть навчальний курс відповідно до ваших інтересів.</p>
+
+            <div class="catalog">
+                <aside class="catalog__filter">
+                    <h2>Фільтри</h2>
+
+                    <form action="courses.html" method="get">
+                        <label for="search">Пошук курсу</label>
+                        <input type="search" id="search" name="search"
+                               placeholder="Назва курсу">
+
+                        <label for="category">Категорія</label>
+                        <select id="category" name="category">
+                            <option value="">Усі категорії</option>
+                            <option value="web">Веброзробка</option>
+                            <option value="programming">Програмування</option>
+                            <option value="database">Бази даних</option>
+                        </select>
+
+                        <label for="level">Рівень складності</label>
+                        <select id="level" name="level">
+                            <option value="">Усі рівні</option>
+                            <option value="beginner">Початковий</option>
+                            <option value="intermediate">Середній</option>
+                            <option value="advanced">Просунутий</option>
+                        </select>
+
+                        <button class="btn" type="submit">Знайти</button>
+                    </form>
+                </aside>
+
+                <section class="catalog__items" aria-labelledby="courses-title">
+                    <h2 id="courses-title">Доступні курси</h2>
+
+                    <div class="cards">
+                        <article class="card">
+                            <h3>
+                             <a class="course-link" href="course.html">
+                                Основи HTML та CSS
+                              </a>
+                            </h3>
+                            <p>Категорія: Веброзробка</p>
+                            <p>Рівень: Початковий</p>
+                            <p>Тривалість: 20 годин</p>
+                            <a class="btn btn--sm" href="enroll.html">Записатися</a>
+                        </article>
+
+                        <article class="card">
+                            <h3 class="card__title">Основи JavaScript</h3>
+                            <p>Категорія: Веброзробка</p>
+                            <p>Рівень: Початковий</p>
+                            <p>Тривалість: 30 годин</p>
+                            <a class="btn btn--sm" href="enroll.html">Записатися</a>
+                        </article>
+
+                        <article class="card">
+                            <h3 class="card__title">Основи Python</h3>
+                            <p>Категорія: Програмування</p>
+                            <p>Рівень: Початковий</p>
+                            <p>Тривалість: 25 годин</p>
+                            <a class="btn btn--sm" href="enroll.html">Записатися</a>
+                        </article>
+
+                        <article class="card">
+                            <h3 class="card__title">Бази даних MySQL</h3>
+                            <p>Категорія: Бази даних</p>
+                            <p>Рівень: Середній</p>
+                            <p>Тривалість: 35 годин</p>
+                            <a class="btn btn--sm" href="enroll.html">Записатися</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

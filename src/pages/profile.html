@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мій кабінет - CourseHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="courses.html">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="enroll.html">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="profile.html" aria-current="page">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" aria-labelledby="profile-title">
+            <h1 id="profile-title">Особистий кабінет студента</h1>
+            <p>
+                Керуйте своїми навчальними курсами
+                та відстежуйте прогрес навчання.
+            </p>
+        </section>
+
+        <section class="section" aria-labelledby="my-courses-title">
+            <h2 id="my-courses-title">Мої курси</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3 class="card__title">Навчальні курси</h3>
+                    <p>
+                        Тут відображатиметься перелік курсів,
+                        на які записаний студент.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Навчальний прогрес</h3>
+                    <p>
+                        Тут відображатиметься інформація
+                        про проходження уроків і виконання завдань.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+<section class="section" aria-labelledby="board-title">
+    <h2 id="board-title">Дошка навчальних завдань</h2>
+    <p>
+        Приклад організації навчальних завдань
+        за етапами їх виконання.
+    </p>
+
+    <div class="task-board"
+         role="region"
+         aria-label="Дошка завдань із горизонтальним прокручуванням"
+         tabindex="0">
+
+        <div class="task-board__columns">
+
+            <section class="task-column" aria-labelledby="planned-title">
+                <h3 id="planned-title">Заплановано</h3>
+
+                <article class="task-card">
+                    <h4>Вивчити основи HTML</h4>
+                    <p>Курс: Основи HTML та CSS</p>
+                </article>
+
+                <article class="task-card">
+                    <h4>Ознайомитися з базами даних</h4>
+                    <p>Курс: Бази даних MySQL</p>
+                </article>
+            </section>
+
+            <section class="task-column" aria-labelledby="progress-title">
+                <h3 id="progress-title">У процесі</h3>
+
+                <article class="task-card">
+                    <h4>Створити HTML-сторінку</h4>
+                    <p>Курс: Основи HTML та CSS</p>
+                </article>
+
+                <article class="task-card">
+                    <h4>Вивчити змінні JavaScript</h4>
+                    <p>Курс: Основи JavaScript</p>
+                </article>
+            </section>
+
+            <section class="task-column" aria-labelledby="review-title">
+                <h3 id="review-title">На перевірці</h3>
+
+                <article class="task-card">
+                    <h4>Перевірити адаптивність</h4>
+                    <p>Курс: Основи HTML та CSS</p>
+                </article>
+
+                <article class="task-card">
+                    <h4>Виконати практичне завдання</h4>
+                    <p>Курс: Основи Python</p>
+                </article>
+            </section>
+
+            <section class="task-column" aria-labelledby="completed-title">
+                <h3 id="completed-title">Завершено</h3>
+
+                <article class="task-card">
+                    <h4>Пройти вступний урок</h4>
+                    <p>Курс: Основи Python</p>
+                </article>
+
+                <article class="task-card">
+                    <h4>Ознайомитися з програмою курсу</h4>
+                    <p>Курс: Основи JavaScript</p>
+                </article>
+            </section>
+
+        </div>
+    </div>
+</section>
+
+        <aside class="section" aria-labelledby="learning-title">
+            <h2 id="learning-title">Продовжуйте навчання</h2>
+            <p>
+                Перегляньте каталог CourseHub, щоб знайти
+                нові навчальні курси.
+            </p>
+
+            <a class="btn" href="courses.html">Переглянути каталог</a>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

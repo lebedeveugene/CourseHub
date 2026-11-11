@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Основи HTML та CSS - CourseHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .course-detail__header {
+            border: 1px solid var(--color-border);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="courses.html" aria-current="page">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="enroll.html">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="profile.html">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="container">
+    <article class="section course-detail">
+
+        <header class="course-detail__header">
+            <h1>Основи HTML та CSS</h1>
+            <p>
+                Практичний курс для початківців, які хочуть навчитися
+                створювати та оформлювати сучасні вебсторінки.
+            </p>
+            <p>Рівень: Початковий | Тривалість: 20 годин</p>
+        </header>
+
+        <section class="course-detail__section">
+            <h2>Про курс</h2>
+            <p>
+                Під час навчання студенти ознайомляться з основами
+                HTML5, семантичною розміткою, CSS-селекторами,
+                каскадом стилів та адаптивною версткою.
+            </p>
+
+            <figure class="course-detail__figure">
+                <img
+                    src="../assets/img/course-preview.png"
+                    alt="Приклад вебсторінки освітньої платформи CourseHub"
+                    width="1280"
+                    loading="lazy"
+                >
+                <figcaption style="font-style: italic;">
+                    Приклад оформлення вебсторінки CourseHub
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="course-detail__section">
+            <h2>Чого ви навчитеся</h2>
+
+            <ul>
+                <li>Створювати семантичну HTML-розмітку.</li>
+                <li>Застосовувати CSS-селектори та властивості.</li>
+                <li>Будувати макети за допомогою Flexbox і Grid.</li>
+                <li>Адаптувати сторінки до різних розмірів екрана.</li>
+            </ul>
+        </section>
+
+        <section class="course-detail__section">
+            <h2>Етапи навчання</h2>
+
+            <ol>
+                <li>Ознайомлення зі структурою HTML-документа.</li>
+                <li>Вивчення основ CSS.</li>
+                <li>Створення адаптивного макета.</li>
+                <li>Розробка власної вебсторінки.</li>
+            </ol>
+        </section>
+
+        <section class="course-detail__section">
+            <h2>Порада студентам</h2>
+
+            <blockquote>
+                <p>
+                    Найкращий спосіб опанувати веброзробку -
+                    створювати власні сторінки та вдосконалювати їх.
+                </p>
+                <footer>Порада CourseHub</footer>
+            </blockquote>
+        </section>
+
+        <section class="course-detail__section">
+            <h2>Програма курсу</h2>
+
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Тривалість</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Основи HTML5</td>
+                        <td>5 годин</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS-селектори та стилі</td>
+                        <td>5 годин</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Flexbox і CSS Grid</td>
+                        <td>5 годин</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Адаптивна верстка</td>
+                        <td>5 годин</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <a class="btn" href="enroll.html">
+            Записатися на курс
+        </a>
+
+    </article>
+</main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

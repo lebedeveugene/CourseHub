@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Запис на курс - CourseHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">Course<span>Hub</span></a>
+
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="courses.html">Каталог курсів</a>
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--active"
+                           href="enroll.html" aria-current="page">Запис на курс</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="profile.html">Мій кабінет</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" aria-labelledby="enroll-title">
+            <h1 id="enroll-title">Запис на навчальний курс</h1>
+
+            <p>
+                Заповніть форму, щоб подати заявку на навчання
+                на платформі CourseHub.
+            </p>
+
+            <form class="enroll-form" method="post">
+                <fieldset>
+                    <legend>Дані студента</legend>
+
+                    <div class="form-group">
+                        <label for="full-name">Повне ім'я</label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            minlength="2"
+                            autocomplete="name"
+                            placeholder="Введіть ваше ім'я"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Електронна пошта</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Оберіть курс</label>
+                        <select id="course" name="course" required>
+                            <option value="">Оберіть навчальний курс</option>
+                            <option value="html-css">Основи HTML та CSS</option>
+                            <option value="javascript">Основи JavaScript</option>
+                            <option value="python">Основи Python</option>
+                            <option value="mysql">Бази даних MySQL</option>
+                        </select>
+                    </div>
+
+                    <button class="btn" type="submit" disabled>
+                        Записатися
+                    </button>
+
+                    <p>
+                        Форма перебуває на етапі розробки.
+                        Надсилання заявок буде доступним
+                        після підключення серверної частини.
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 CourseHub</p>
+            <ul class="footer__list">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="courses.html">Каталог курсів</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
